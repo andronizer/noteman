@@ -1,0 +1,31 @@
+@use '../../scss/' as *;
+
+.notes_wrapper {
+  @include flex(center, unset);
+  flex-wrap: wrap;
+  width: 70%;
+  margin: 10px;
+
+  .note_wrapper {
+    width: 200px;
+    min-height: 50px;
+    background: $white;
+    box-shadow: $box-shadow;
+    border-radius: $border-radius;
+    margin: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+    word-wrap: break-word;
+
+    @include flex(space-between, flex-start);
+  }
+
+  p {
+    font-family: $font-family;
+  }
+
+  .btns_wrapper {
+    flex-direction: column;
+    @include flex(unset, center);
+  }
+}

@@ -1,0 +1,24 @@
+@use '../../scss/' as *;
+
+.filteredNotes_wrapper {
+  @include flex(center, unset);
+  flex-wrap: wrap;
+  width: 70%;
+  margin: 10px;
+
+  .filteredNote_wrapper {
+    width: 200px;
+    min-height: 50px;
+    background: $white;
+    box-shadow: $box-shadow;
+    border-radius: $border-radius;
+    margin: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+    word-wrap: break-word;
+
+    p {
+      font-family: $font-family;
+    }
+  }
+}

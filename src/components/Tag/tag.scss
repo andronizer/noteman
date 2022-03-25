@@ -1,0 +1,22 @@
+@use '../../scss/' as *;
+
+.tags_wrapper {
+  width: 70%;
+  padding: 10px;
+
+  @include flex(center, center);
+
+  .tag {
+    background-color: $white;
+    border-radius: $border-radius;
+    padding: 5px 8px;
+    margin: 2px;
+    display: flex;
+
+    span {
+      margin-right: 5px;
+      cursor: pointer;
+      color: $tags-color;
+    }
+  }
+}

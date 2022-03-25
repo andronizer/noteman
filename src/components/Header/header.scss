@@ -1,0 +1,13 @@
+@use '../../scss/' as *;
+
+.header_wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0;
+
+  h1 {
+    font-size: 3rem;
+  }
+}
